@@ -1,25 +1,29 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700;900&display=swap');
 :root{
-    --cor0:#031c38;
-    --cor1:#054691;
+    --cor0:#262626;
+    --cor1:#0D0D0D;
+    --cor2:#4BF2F2;
+    --cor3:#41CAD9;
+    --cor4:#277A8C;
+
+    --font1:font-family: 'Outfit', sans-serif;;
+    --font2:font-family:Arial;;
 }
 *{
     margin: 0;
     padding: 0;
 }
+
+/*Header*/
 header{
-    background-color: var(--cor1);
+    margin: 20px;
     padding: 10px;
-}
-body{
-    background-color: var(--cor0);
-    color: white;
-    
+    border-bottom-left-radius: 20px;
 }
 nav{
     display: flex;
     justify-content: space-between;
-    
     
 }
 nav > .jld img{
@@ -27,8 +31,11 @@ nav > .jld img{
     
 }
 nav .links{
+    margin-top: 1vh;
     flex-wrap: wrap;
-    margin-top: 12px;
+}
+#home{
+color: var(--cor2);
 }
 
 nav > div>  a{
@@ -38,7 +45,57 @@ nav > div>  a{
     padding: 0px 10px 5px 10px;
 }
 
-/*animações*/
+/*Body*/
+body{
+    background-color: var(--cor0);
+    color: white;
+    font-family: var(--font1);
+    margin-left: 2vw;
+}
+/*Main*/
+
+main > article > .content > h1{
+    margin: 20px;
+    animation: sidemove 1.5s linear 0.7s;
+    transition: 0.5s;
+   
+}
+main >article >.content > p#hi{
+    margin: 20px;
+    animation: sidemove 1.5s linear ;
+    transition: 0.5s;
+
+}
+/*article*/
+article > div >p{
+    margin-left: 2vw;
+}
+article button{
+    margin: 10px;
+    margin-left: 2.5vw;
+}
+
+
+
+
+
+/*Other Elements*/
+
+
+
+/*Animations*/
 nav a:hover{
     text-decoration: underline;
+}
+
+@keyframes sidemove{
+    0%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+   
+
+
 }
