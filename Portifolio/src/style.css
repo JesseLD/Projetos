@@ -7,19 +7,26 @@
     --cor3:#41CAD9;
     --cor4:#277A8C;
 
-    --font1:font-family: 'Outfit', sans-serif;;
-    --font2:font-family:Arial;;
+    --font1:'Outfit', sans-serif;
+    --font2:Arial;
 }
 *{
     margin: 0;
     padding: 0;
 }
 
+/*Body*/
+body{
+    background-color: var(--cor0);
+    color: white;
+    font-family: var(--font1);
+    margin-left: 2vw;
+}
+
 /*Header*/
 header{
     margin: 20px;
     padding: 10px;
-    border-bottom-left-radius: 20px;
 }
 nav{
     display: flex;
@@ -45,28 +52,30 @@ nav > div>  a{
     padding: 0px 10px 5px 10px;
 }
 
-/*Body*/
-body{
-    background-color: var(--cor0);
-    color: white;
-    font-family: var(--font1);
-    margin-left: 2vw;
-}
 /*Main*/
 
 main > article > .content > h1{
-    margin: 20px;
-    animation: sidemove 1.5s linear 0.7s;
+    margin: 10px;
+    animation: sidemove 1.5s ease 0.7s;
     transition: 0.5s;
    
 }
 main >article >.content > p#hi{
-    margin: 20px;
-    animation: sidemove 1.5s linear ;
+    margin: 10px 20px;
+    animation: sidemove 1.5s ease;
     transition: 0.5s;
 
 }
 /*article*/
+article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+article > content{
+    width: 340px;
+}
+
 article > div >p{
     margin-left: 2vw;
 }
@@ -75,7 +84,48 @@ article button{
     margin-left: 2.5vw;
 }
 
+.content > h1{
+    font-size:5.5em;
+    
+}
+#h1edit{
+    color: rgb(196, 195, 195);
+}
+.emp{
+    font-size: 2em;
+    line-height: 35px;
+    animation: sidemove 1.5s ease 0.9s;
+    transition: 0.5s;
+}
+#emp1,#emp2{
+    color: var(--cor2);
+}
+.btn{  
+    margin: 20px 0 0 5vw;
+    background-color: var(--cor2);
+    width: 120px;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    animation: sidemove 1.5s ease 0.9s;
+    transition: 0.5s;
+    
+}
+.btn>a{
+    font-family: var(--font1);
+    font-size: 1.4em;
+    text-decoration: none;
+    color: purple;
+}
+.image{
+    margin: 0px 6vw 0px 20vw;
+    width: 100%;
 
+    
+}
+.imageAdj{
+    width: 100%;
+}
 
 
 
@@ -88,9 +138,21 @@ nav a:hover{
     text-decoration: underline;
 }
 
+.btn:hover{
+    background-color: var(--cor4);
+    transition: 500ms;
+}
+.btn>a:hover{
+        color: white;
+        text-decoration: underline;
+}
 @keyframes sidemove{
     0%{
         transform: translateX(-20px);
+        opacity: 0%;
+    }
+    15%{
+        opacity: 100%;
     }
     100%{
         transform: translateX(0px);
@@ -98,4 +160,10 @@ nav a:hover{
    
 
 
+}
+/*Rules*/
+@media only screen and (max-width:500px){
+    .image{
+        display: none;
+    }
 }
