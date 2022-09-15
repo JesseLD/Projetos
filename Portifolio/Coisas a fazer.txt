@@ -1,0 +1,5 @@
+Ajustes
+
+- Responsividade das imagens
+- Mexida no nav pra ficar em pé
+- Ativar botões
