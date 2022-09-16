@@ -118,13 +118,15 @@ article button{
     color: purple;
 }
 .image{
-    margin: 0px 6vw 0px 20vw;
+    margin-right: 8vw;
+    min-width: 220px;
+    max-width: 600px;
     width: 100%;
-
-    
 }
-.imageAdj{
-    width: 100%;
+.im1{
+    min-width: 150px;
+    margin-top: -6vw;
+
 }
 
 
@@ -162,6 +164,26 @@ nav a:hover{
 
 }
 /*Rules*/
+@media only screen and (max-width:999px){
+    .im1{
+        width: 100%;
+        margin: 0;
+        transform: scale(96%);
+    }
+    
+    .content{
+       transform: scale(96%);
+       
+    }
+}
+@media only screen and (max-width:700px){
+    article{
+        flex-direction: column;
+    }
+    .im1{
+        max-width: 84%;
+    }
+}
 @media only screen and (max-width:500px){
     .image{
         display: none;
