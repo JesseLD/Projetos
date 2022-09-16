@@ -1,5 +1,9 @@
 Ajustes
 
+
+------------- 15/09/2022 -----------
+
 - Responsividade das imagens
-- Mexida no nav pra ficar em pé
+- Mexida no nav pra ficar em pé, em telas pequenas
 - Ativar botões
+------------------------------------
