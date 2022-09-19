@@ -13,10 +13,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
+
 }
 
 /*Body*/
 body{
+    width: 98%;
     background-color: var(--cor0);
     color: white;
     font-family: var(--font1);
