@@ -11,11 +11,11 @@
 <body>
     <header>
         <nav>
-            <div class="jld">
-                <abbr title="Jessé Oliveira"><img width="40px"src="media/me-300.jpeg" alt=""></abbr>
+            <div class="jld" onclick="alerta()">
+                <abbr title="Jessé Oliveira"><img class="icon" width="40px"src="media/me-300.jpeg" alt=""></abbr>
             </div>
             <div class="links">
-                <a id="home" href="#" target="_self" rel="self">Home</a>
+                <a class="home" href="#" target="_self" rel="self">Home</a>
                 <a href="#" target="_self" rel="self">Saiba Mais</a>
                 <a href="#" target="_self" rel="self">Portifólio</a>
                 <a href="#" target="_self" rel="self">Sobre</a>
@@ -26,23 +26,29 @@
         <article>
             <div class="content">
                 <p id="hi">Bem - Vindo(a)&#x1F44B;&nbsp;Eu sou </p>
-                <h1>Jessé<br> &nbsp;<span id="h1edit">Oliveira</span></h1>
+                <h1 class="animh1" id="h1edit1">Jessé<br> &nbsp;<span id="h1edit" >Oliveira</span></h1>
                 <p class="emp">E Tenho <br>
-                    <span class="emph" id="emp1">Grandes Idéias</span> para <br>
-                    <span class="emph" id="emp2">Comparilhar</span>
+                    <span class="emph emp1">Grandes Idéias</span> para <br>
+                    <span class="emph emp2">Comparilhar</span>
                 </p>
                 <button class="btn">
                     <a href="#"target="_self" rel="self">Saiba mais</a>
                 </button>
             </div>
             <div class="image">
-                    <img class="im1"width="600px" src="media/tech.svg" alt="">
+                    <img class="im1" width="550px" src="media/tech.svg" alt="">
             </div>
         </article>
-
-
     </main>
+    <footer>
+        <p>&copy; Jessé Oliveira - 2022</p>
+    </footer>
 
-
+    <script>
+        function alerta(){
+            window.alert("hehe, boy");
+            
+        }
+    </script>
 </body>
 </html>

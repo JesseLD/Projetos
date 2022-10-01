@@ -14,13 +14,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
 
 /*Body*/
 body{
-    width: 98%;
+    width: 98vw;
     background-color: var(--cor0);
     color: white;
     font-family: var(--font1);
@@ -31,6 +29,7 @@ body{
 header{
     margin: 20px;
     padding: 10px;
+    z-index: 20;
 }
 nav{
     display: flex;
@@ -45,30 +44,40 @@ nav .links{
     margin-top: 1vh;
     flex-wrap: wrap;
 }
-#home{
+.home{
 color: var(--cor2);
 }
 
 nav > div>  a{
     color: white;
     text-decoration: none;
-    margin: 0;
+    margin: 3px;
     padding: 0px 10px 5px 10px;
+    line-height: 2px;
 }
-
+.icon{
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: scale(2);
+    transition: 0.5s;
+}
 /*Main*/
 
 main > article > .content > h1{
     margin: 10px;
     animation: sidemove 1.5s ease 0.7s;
     transition: 0.5s;
+    animation: upMove 6s linear 1s infinite;
+    transition: 0.7s;
+    text-shadow: 4px 4px black;
    
 }
 main >article >.content > p#hi{
     margin: 10px 20px;
     animation: sidemove 1.5s ease;
     transition: 0.5s;
-
+   
 }
 /*article*/
 article{
@@ -94,15 +103,23 @@ article button{
 }
 #h1edit{
     color: rgb(196, 195, 195);
+    
 }
+.animh1{
+    animation: leftMove 6s ease 1s infinite;
+}
+
 .emp{
     font-size: 2em;
     line-height: 35px;
     animation: sidemove 1.5s ease 0.9s;
     transition: 0.5s;
+    line-height: 140%;
+    transition: 0.5s;
 }
-#emp1,#emp2{
+.emp1,.emp2{
     color: var(--cor2);
+    transition: 0.5s;
 }
 .btn{  
     margin: 20px 0 0 5vw;
@@ -113,7 +130,6 @@ article button{
     border: none;
     animation: sidemove 1.5s ease 0.9s;
     transition: 0.5s;
-    
 }
 .btn>a{
     font-family: var(--font1);
@@ -122,18 +138,36 @@ article button{
     color: purple;
 }
 .image{
+    position: relative;
     margin-right: 8vw;
     min-width: 220px;
     max-width: 600px;
     width: 100%;
 }
 .im1{
+    position: relative;
     min-width: 150px;
-    margin-top: -6vw;
+    margin-top: -3vw;
 
 }
+footer{
+   margin:-0.20% 0 0 -2vw;
+   text-align: center;
+}
+footer>p{
+    background: #555;
+    
+}
 
-
+.emph:hover{
+    color: purple;
+    background-color: #4BF2F2;
+    font-size: 1.3em;
+    border-radius: 20px;
+    padding: 4px;
+    transform: translateY(-4px);
+    transition: 0.5s;
+}
 
 /*Other Elements*/
 
@@ -142,6 +176,11 @@ article button{
 /*Animations*/
 nav a:hover{
     text-decoration: underline;
+    background-color: #41CAD9;
+    padding: 10px;
+    border-radius: 20px;
+    color: purple;
+    font-weight: bold;
 }
 
 .btn:hover{
@@ -162,11 +201,25 @@ nav a:hover{
     }
     100%{
         transform: translateX(0px);
-    }
-   
-
-
+    }  
 }
+
+@keyframes upMove {
+   0%{
+        transform: translateY(-9px);
+    }
+   25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+   75%{
+        transform: translateY(-10px);
+    }
+}
+
+
 /*Rules*/
 @media only screen and (max-width:999px){
     .im1{
