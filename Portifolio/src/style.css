@@ -54,12 +54,14 @@ nav > div>  a{
     margin: 3px;
     padding: 0px 10px 5px 10px;
     line-height: 2px;
+    transition:all 0.4s ease 0s;
+
 }
 .icon{
     transition: 0.5s;
 }
 .icon:hover{
-    transform: scale(2);
+    transform: scale(1.6);
     transition: 0.5s;
 }
 /*Main*/
@@ -175,7 +177,7 @@ footer>p{
 
 /*Animations*/
 nav a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     background-color: #41CAD9;
     padding: 10px;
     border-radius: 20px;
