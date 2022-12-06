@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*desktop*/
+@media screen and (max-width:1440px){
+  
+  div.cookies{
+    top: 88vh;
+    width: 700px; 
+  }
+
+
+}
+
+/*tablet*/
+@media screen and (max-width:610px){
+
+  div.cookies{
+    top: 87vh;
+    width: 320px; 
+  }
+}
+
+/*mobile 667 */
+@media screen and (max-width:540px){
+
+  .first-container{
+    flex-flow: column-reverse;
+    
+  }
+  div.content-text{
+    text-align: center;
+    margin: 20px 0;
+  }
+  div.content-text>h1,p{
+    margin: 0 0 15px 0;
+  }
+  .content-button{
+    margin: 20px auto;
+  }
+
+  div.cookies{
+    top: 75vh;
+    width: 320px; 
+  }
+
+}
+@media screen and (max-width:375px){
+  
+  div.cookies{
+    top: 85vh;
+    width: 320px; 
+  }
+}
