@@ -23,7 +23,7 @@
 /*mobile 667 */
 @media screen and (max-width:540px){
 
-  .first-container{
+  .primary-container{
     flex-flow: column-reverse;
     
   }
@@ -37,6 +37,14 @@
   .content-button{
     margin: 20px auto;
   }
+  .wa-wrapper{
+    margin: auto;
+  }
+  .element-badge{
+    flex-flow: column;
+    text-align: center;
+  }
+  
 
   div.cookies{
     top: 75vh;

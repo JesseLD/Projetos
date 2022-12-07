@@ -39,6 +39,9 @@ img.logo{
   object-position: center;
 
 }
+.image-container{
+  width: 100%;
+}
 .flex-center{
   display: flex;
   justify-content: center;
@@ -58,20 +61,33 @@ div.content-text>p{
 div.content-text>h1{
   font-size: max(2.1em, 4vw);
 } 
-.content-button{
-  width: 180px;
-  padding: 20px;
-  background-color: var(--color0);
+.wa-button{
   font-size: 1em;
   color: white;
   font-weight: bold;
-  border-radius: 12px;
-  border: none;
   cursor: pointer;
-  margin: 25px 0;
-  margin-left: calc(100% - 180px);
-  box-shadow: 0 30px 45px 0 #00000088;
+  text-decoration: none;
 }
+.wa-wrapper{
+  width: 100% ;
+  height: 100%;
+  max-width: 180px;
+  max-height: 100px;
+  padding: 15px 8px;
+  margin:20px 0 0 calc(100% - 190px);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  box-shadow: 0 30px 45px 0 #00000088;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  background-color: #45454555;
+}
+.wa-logo,.wa-text{
+  padding: 0 5px;
+  font-size: 1.2em;
+}
+
 .laptop{
   width: 100%;
   max-width: 600px;
@@ -79,6 +95,25 @@ div.content-text>h1{
   object-fit: cover;
   object-position: center;
 }
+.badge-element-container{
+  width: 100%;
+}
+.element-badge{
+  flex-flow: row;
+  max-height: 60px;
+  margin: 30px 0 0 0;
+
+}
+.element-text{
+  font-size: max(1.2em,1vw);
+  font-weight: bolder;
+}
+.badge{
+  width: 48px;
+  height: 48px;
+}
+
+
 
 
 /*cookies*/
